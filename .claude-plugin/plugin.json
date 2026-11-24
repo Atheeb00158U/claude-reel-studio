@@ -1,0 +1,21 @@
+{
+  "name": "reel-studio",
+  "version": "0.6.0",
+  "description": "A video production team for Berribot and Gridd AI: a producer that plans each video and asks which saved style and rights mode to use; departments for script and voice, footage sourcing, editing, captions, UI motion, effects, glitch VFX, colour, music arc, sound and QA; and a style library that learns from every approval and rejection.",
+  "author": {
+    "name": "Atheeb (Berribot)"
+  },
+  "keywords": [
+    "video",
+    "reels",
+    "motion graphics",
+    "ui animation",
+    "vfx",
+    "glitch",
+    "color grading",
+    "sfx",
+    "music",
+    "style library",
+    "raea"
+  ]
+}

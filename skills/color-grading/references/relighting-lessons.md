@@ -1,0 +1,6 @@
+# Colour looks and relighting (Nov 21 2026)
+
+- **Colour looks and relighting** (Nov 21 2026; the full method is the `color-grading` skill, with its own copy of `refgrade.py`):
+  - Grade by matching a reference frame: `_Global library/tools/grading/refgrade.py` (luminance histogram match at 0.4–0.75, zone-wise LAB colour transfer for shadows/mids/highlights, skin protected by YCbCr locus). Use 0.4 for bright references so blacks don't go grey. Show 6–12 looks of the same frame on one labelled sheet with the original first; bake the pick with `bake_cube()` to a `.cube` and apply with ffmpeg `lut3d=x.cube:interp=tetrahedral` before compositing (vignette and grain go in the composition).
+  - **Never fake relighting in code.** Coloured light pools, window slats and rim light painted from a 2D person matte were rejected as "fake": without depth and normals the light can't wrap the face. Real relighting needs an AI relight model, which the cloud workspace can't run; ask Atheeb before using one in the browser, or say it can't be done here.
+  - Better person mattes: sum the selfie_multiclass person classes (hair, body skin, face skin, clothes), threshold 0.55–0.85, keep the largest component, flood-fill holes (a held glass leaves one).
