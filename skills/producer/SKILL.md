@@ -57,3 +57,4 @@ The entry point of the Reel Studio team. Every video starts here, and every othe
 - Someone else's video is reference only: rebuild with real material.
 - Remotion only with Atheeb's approval (see `references/engine-raea.md`).
 - When a tool, render, download or transfer misbehaves, read `references/gotchas.md`.
+- **Every plugin update goes to GitHub.** Whenever a skill, reference, kit file or script in this plugin changes (including style rules promoted into the plugin), bump the version, commit with the noreply author, tag, repackage the `.plugin`, and push to https://github.com/Atheeb00158U/claude-reel-studio. Steps: `references/publishing-plugin-updates.md`.

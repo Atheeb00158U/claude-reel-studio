@@ -47,6 +47,7 @@ python3 styles.py validate [<id>]
 - Keep `approved`/`rejected` entries short and concrete (what, where, why). Put the actual numbers in the department section (e.g. `edit.transitions.vocabulary`), not only in the log.
 - Never delete history. If a rule is reversed, `set` the new value with a note that says it replaces the old one.
 - Update `STYLE.md` prose when a rule changes meaningfully, and refresh the project mirror doc.
+- When a learned rule becomes a plugin default (a skill, reference or kit file changes), that is a plugin update: publish it to GitHub with the producer's `references/publishing-plugin-updates.md`.
 
 ## Seeded styles (Nov 21 2026)
 `gridd-mmh-ad-story` (approved), `berribot-mmh-explainer` (approved), `claude-showcase-listicle` (draft).

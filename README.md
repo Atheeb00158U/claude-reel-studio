@@ -1,6 +1,6 @@
 # claude-reel-studio
 
-Reel Studio, a Claude Cowork / Claude Code plugin (v0.6.0). Install by zipping this folder as `reel-studio.plugin`, or add the repo as a plugin source.
+Reel Studio, a Claude Cowork / Claude Code plugin (v0.6.1). Install by zipping this folder as `reel-studio.plugin`, or add the repo as a plugin source.
 
 # Reel Studio — a video production team
 
@@ -49,3 +49,16 @@ Learned on the Wealthometry Script 3 ad, after two rejected passes:
 - **sound-design:** no per-word caption ticks; one sound per meaningful event, mapped to the new SFX pack (about 28/min).
 - **typography-titles / captions:** stacks get their own clean screen; restore caption words when a big word is removed.
 - **style-library:** new styles start with these `ui_motion` rules.
+
+## v0.6.1 (Nov 2026): every update is pushed to GitHub
+- **producer:** new rule and `references/publishing-plugin-updates.md`. Every plugin change bumps the version, is committed with the noreply author, tagged, repackaged and pushed to this repo.
+- **style-library:** a learned rule that becomes a plugin default is published the same way.
+
+## Publishing updates
+Repo: https://github.com/Atheeb00158U/claude-reel-studio. The working copy lives in `Claude video work/claude-reel-studio` on the Mac. For each update: bump `.claude-plugin/plugin.json`, add a `## vX.Y.Z` note here, commit as `Atheeb <Atheeb00158U@users.noreply.github.com>`, tag `vX.Y.Z`, then push:
+
+```sh
+cd ~/Desktop/"Claude video work"/claude-reel-studio && git push origin main --tags
+```
+
+Full steps: `skills/producer/references/publishing-plugin-updates.md`.
