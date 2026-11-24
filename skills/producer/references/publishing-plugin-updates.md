@@ -27,5 +27,5 @@ Every change to Reel Studio (a skill, a reference, a kit file, a script) is a pl
 
 ## Never
 - Commit secrets, tokens, `.env` files, client footage, renders or voice files.
-- Commit third-party audio, footage or fonts whose licence forbids redistribution (Storyblocks, Mixkit, Pixabay, YouTube rips, meme audio, commercial fonts). Commit an index of them instead (see `sfx/` in the README).
+- Commit audio, footage or fonts to this (plugin) repo. Sounds live in the separate **private** repo `claude-reel-studio-sfx` (Git LFS), which must stay private: its Storyblocks, Mixkit, Pixabay and meme files can't be redistributed publicly.
 - Force-push `main` without asking Atheeb.

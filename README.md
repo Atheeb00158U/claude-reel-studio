@@ -1,6 +1,6 @@
 # claude-reel-studio
 
-Reel Studio, a Claude Cowork / Claude Code plugin (v0.6.1). Install by zipping this folder as `reel-studio.plugin`, or add the repo as a plugin source.
+Reel Studio, a Claude Cowork / Claude Code plugin (v0.6.2). Install by zipping this folder as `reel-studio.plugin`, or add the repo as a plugin source.
 
 # Reel Studio — a video production team
 
@@ -49,6 +49,21 @@ Learned on the Wealthometry Script 3 ad, after two rejected passes:
 - **sound-design:** no per-word caption ticks; one sound per meaningful event, mapped to the new SFX pack (about 28/min).
 - **typography-titles / captions:** stacks get their own clean screen; restore caption words when a big word is removed.
 - **style-library:** new styles start with these `ui_motion` rules.
+
+## SFX library (private repo)
+The sounds the skills use live in a separate **private** repo, https://github.com/Atheeb00158U/claude-reel-studio-sfx (Git LFS, about 540 MB, invite-only). Clone it into the global library so the paths match:
+
+```sh
+brew install git-lfs && git lfs install        # once per Mac
+cd ~/Desktop/"Claude video work/_Global library"
+git clone https://github.com/Atheeb00158U/claude-reel-studio-sfx.git sfx
+```
+
+Keep it private: several sources (Storyblocks, Mixkit, Pixabay, meme audio) allow use in your own videos but not sharing the files publicly. Rights per sound: the repo's README.
+
+## v0.6.2 (Nov 2026): shared SFX library
+- **sound-design:** the SFX library is the private `claude-reel-studio-sfx` repo cloned as `_Global library/sfx`; new sounds are pushed there.
+- **producer:** the publishing steps say audio never goes in this repo.
 
 ## v0.6.1 (Nov 2026): every update is pushed to GitHub
 - **producer:** new rule and `references/publishing-plugin-updates.md`. Every plugin change bumps the version, is committed with the noreply author, tagged, repackaged and pushed to this repo.
